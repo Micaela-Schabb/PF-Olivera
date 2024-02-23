@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+body {
+  font-family: "Roboto Condensed";
+  color: black;
+  background-image: url(../medios/fondo.jpeg);
+}
+body a {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+body img {
+  width: 200px;
+}
+body header {
+  background-image: url(../medios/fondo.jpeg);
+}
+body header a {
+  color: black;
+  text-decoration: none;
+}
+body header a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+body ul {
+  color: black;
+  list-style: none;
+}
+body main {
+  text-align: center;
+}
+body main ol {
+  text-align: left;
+  list-style: circle;
+}
+body main img {
+  width: 400px;
+}
+body section {
+  color: black;
+  background-image: url(../medios/banner.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+body footer a {
+  color: black;
+  text-decoration: none;
+}
+body footer img {
+  width: 90px;
+}
+body .flex-container {
+  display: flex;
+  background-color: #d87093;
+  justify-content: space-around;
+}
+body .flex-container > ul {
+  display: flex;
+  margin: 60px;
+  padding: 40px;
+  font-size: 40px;
+}
+body .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .menu-estilo {
+  background-color: #d87093;
+  color: black;
+  border: none;
+}
+body .menu-estilo:hover {
+  font-weight: bold;
+}
+body .carousel-flex {
+  display: flex;
+  background-color: #d87093;
+  justify-content: center;
+}
+body .padre {
+  display: grid;
+  background-image: url(../medios/fondo.jpeg);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(8, 400px);
+  justify-content: space-around;
+}
+body .padre {
+  display: grid;
+  background-image: url(../medios/fondo.jpeg);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 400px);
+  justify-content: space-around;
+  gap: 20px;
+}
+body .padre div img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  body .padre {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  body .padre {
+    grid-template-columns: 1fr;
+  }
+}
+body .foto {
+  width: 250px;
+}
+body .conocenos {
+  text-align: justify;
+}
+body .collage {
+  width: 25%;
+}
+body nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #d87093;
+}
+body .btn-group {
+  position: relative;
+}
+body .menu-estilo {
+  background-color: #d87093;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+body .dropdown-menu li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+body .dropdown-menu li a {
+  text-decoration: none;
+  color: #d87093;
+  display: block;
+  padding: 5px 10px;
+}
+body .dropdown-menu li a:hover {
+  background-color: #e9ecef;
+}
+body .flex-container {
+  display: flex;
+}
+body .flex-container li {
+  margin-right: 20px;
+}
+body .flex-container li:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  body .flex-container {
+    display: none;
+  }
+  body .btn-group {
+    display: block;
+  }
+  body .dropdown-menu {
+    position: static;
+    display: none;
+  }
+  body .btn-group.active .dropdown-menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 769px) {
+  body .btn-group {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

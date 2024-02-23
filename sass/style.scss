@@ -1,0 +1,239 @@
+//Fuente
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+//font-family: 'Roboto Condensed', sans-serif; 
+
+//Variables
+$rosa: #d87093;
+$fuente: 'Roboto Condensed';
+
+body {
+    font-family: $fuente;
+    color: black;
+    background-image: url(../medios/fondo.jpeg);
+    
+    a { 
+        color: black;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    img { 
+        width: 200px;
+    }
+    
+    header {
+        background-image: url(../medios/fondo.jpeg);
+    }
+
+    header a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    }
+
+    ul {
+        color: black;
+        list-style: none;
+    }
+
+    main {
+        text-align: center;
+
+        ol { 
+            text-align: left;
+            list-style: circle;
+        }
+    }
+
+    main img {
+        width: 400px;
+    }
+
+    section {
+        color: black;
+        background-image: url(../medios/banner.jpeg);
+        background-size: cover;
+        text-align: center;
+    }
+
+    footer a {
+        color: black;
+        text-decoration: none;
+    }
+
+    footer img {
+        width: 90px;
+    }
+
+    .flex-container {
+        display: flex;
+        background-color: $rosa;
+        justify-content: space-around;
+    }
+
+    .flex-container > ul {
+        display: flex;
+        margin: 60px;
+        padding: 40px;
+        font-size: 40px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-estilo {
+        background-color: $rosa;
+        color: black;
+        border: none;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+    .carousel-flex{
+        display: flex;
+        background-color: $rosa;
+        justify-content: center;
+    }
+
+    .padre {
+        display: grid;
+        background-image: url(../medios/fondo.jpeg);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 400px);
+        justify-content: space-around;
+    }
+    .padre {
+        display: grid;
+        background-image: url(../medios/fondo.jpeg);
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(8, 400px); 
+        justify-content: space-around; 
+        gap: 20px; 
+      }
+      
+      .padre div {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      
+
+      @media screen and (max-width: 768px) {
+        .padre {
+          grid-template-columns: repeat(2, 1fr); 
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+        .padre {
+          grid-template-columns: 1fr; 
+        }
+      }
+      
+
+    .foto {
+        width: 250px;
+    }
+    .conocenos{
+      text-align: justify;
+    }
+   .collage{
+    width: 25%;
+   }
+
+   nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: $rosa; 
+  }
+  
+  .btn-group {
+    position: relative;
+  }
+  
+  .menu-estilo {
+    background-color: $rosa; 
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white; 
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+  }
+  
+  .dropdown-menu li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: $rosa;
+    display: block;
+    padding: 5px 10px;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #e9ecef; 
+  }
+  
+  .flex-container {
+    display: flex;
+  }
+  
+  .flex-container li {
+    margin-right: 20px;
+  }
+  
+  .flex-container li:last-child {
+    margin-right: 0;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .flex-container {
+      display: none; 
+    }
+    
+    .btn-group {
+      display: block; 
+    }
+    
+    .dropdown-menu {
+      position: static; 
+      display: none; 
+    }
+    
+    .btn-group.active .dropdown-menu {
+      display: block; 
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .btn-group {
+      display: none; 
+    }
+  }
+  
+    
+}
